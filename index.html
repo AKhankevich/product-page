@@ -12,10 +12,10 @@
         
         <!-- Вкладки -->
         <div class="tabs">
-            <button class="tablinks" onclick="openTab(event, 'product-info')">Основная информация</button>
-            <button class="tablinks" onclick="openTab(event, 'packaging-info')">Упаковка</button>
-            <button class="tablinks" onclick="openTab(event, 'characteristics-info')">Характеристики</button>
-            <button class="tablinks" onclick="openTab(event, 'supplier-info')">Поставщики</button>
+            <a href="#product-info" class="tablinks" onclick="openTab(event, 'product-info')">Основная информация</a>
+            <a href="#packaging-info" class="tablinks" onclick="openTab(event, 'packaging-info')">Упаковка</a>
+            <a href="#characteristics-info" class="tablinks" onclick="openTab(event, 'characteristics-info')">Характеристики</a>
+            <a href="#supplier-info" class="tablinks" onclick="openTab(event, 'supplier-info')">Поставщики</a>
         </div>
 
         <!-- Содержимое вкладок -->
@@ -138,29 +138,3 @@
                 <span id="body-diameter">38.5</span>
             </div>
             <div class="info">
-                <label>Диаметр штока:</label>
-                <span id="rod-diameter">12.5</span>
-            </div>
-        </div>
-
-        <div id="supplier-info" class="tabcontent">
-            <h2>Поставщики</h2>
-            <div class="info">
-                <label>Основной поставщик:</label>
-                <span id="main-supplier">АДД</span>
-            </div>
-            <div class="info">
-                <label>Артикул основного поставщика:</label>
-                <span id="supplier-sku">CGN20114</span>
-            </div>
-            <div class="info">
-                <label>Упаковочное количество:</label>
-                <span id="supplier-packaging-qty">10</span>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
