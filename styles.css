@@ -57,5 +57,13 @@ span {
 }
 
 .tablinks:hover {
-    background-color: #ddd
+    background-color: #ddd;
+}
+
+.tablinks.active {
+    background-color: #ccc;
+}
+
+/*
+
 
