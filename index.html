@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Ваш HTML-код -->
-    <script src="script.js"></script>  
-</head>
-<body>
     <div class="container">
         <h1>Карточка продукта</h1>
         
-        <!-- Основная информация -->
-        <section id="product-info">
+        <!-- Вкладки -->
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'product-info')">Основная информация</button>
+            <button class="tablinks" onclick="openTab(event, 'packaging-info')">Упаковка</button>
+            <button class="tablinks" onclick="openTab(event, 'characteristics-info')">Характеристики</button>
+            <button class="tablinks" onclick="openTab(event, 'supplier-info')">Поставщики</button>
+        </div>
+
+        <!-- Содержимое вкладок -->
+        <div id="product-info" class="tabcontent">
             <h2>Основная информация</h2>
             <div class="info">
                 <label>Бренд:</label>
@@ -49,10 +53,9 @@
                 <label>Текстовое описание:</label>
                 <span id="description">При проектировании легковых амортизаторов MARSHALL учитывался опыт разработки деталей для коммерческой техники, где крайне высоки требования к качеству запчастей, а пробеги исчисляются сотнями тысяч километров в год. Это позволило применить надежные конструкторские решения, проверенные тяжелой техникой и обеспечить долговечность работы амортизатора.</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Упаковка -->
-        <section id="packaging-info">
+        <div id="packaging-info" class="tabcontent">
             <h2>Упаковка</h2>
             <div class="info">
                 <label>Вес, кг:</label>
@@ -78,10 +81,9 @@
                 <label>Упаковочное количество:</label>
                 <span id="packaging-qty">10</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Характеристики -->
-        <section id="characteristics-info">
+        <div id="characteristics-info" class="tabcontent">
             <h2>Характеристики</h2>
             <div class="info">
                 <label>Комплектация:</label>
@@ -139,10 +141,9 @@
                 <label>Диаметр штока:</label>
                 <span id="rod-diameter">12.5</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Поставщики -->
-        <section id="supplier-info">
+        <div id="supplier-info" class="tabcontent">
             <h2>Поставщики</h2>
             <div class="info">
                 <label>Основной поставщик:</label>
@@ -156,8 +157,10 @@
                 <label>Упаковочное количество:</label>
                 <span id="supplier-packaging-qty">10</span>
             </div>
-        </section>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
